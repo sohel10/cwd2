@@ -13,7 +13,7 @@ import streamlit as st
 from PIL import Image
 
 # Loading the saved model
-with open("rf_model.pkl", "rb") as file:
+with open("rf_model2.pkl", "rb") as file:
     loaded_model = pickle.load(file)
 
 # Creating a function for Prediction
