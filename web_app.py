@@ -50,7 +50,7 @@ def main():
     Urine = st.selectbox('Urine Lures', [0.0, 0.5, 1.0])
     Captive = st.selectbox('Captive status', [0, 1])
     Forest = st.slider('Forest (Average Proportion)', 0.007, 0.89, 0.4, 0.01)
-    Clay = st.slider('Clay (Average Percent)', 4, 31, 15, 1)  # Corrected step to float to match other float values
+    Clay = st.slider('Clay (Average Percent)', 4, 31, 15, 0.5)  # Corrected step to float to match other float values
     Streams = st.slider('Streams (Average distance to the nearest water)', 1125, 41430, 20000, 20)
   
     # Code for Prediction
