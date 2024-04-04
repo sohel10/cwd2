@@ -41,17 +41,17 @@ def main():
     st.header("User Input:")
     
     # Getting the input data from the user
-    Cervid = st.slider('Number of Cervid Facilities', 0, 9, 5,1)
-    Harvest = st.slider('Total Harvest', 5, 9950, 2000, 10)
+    Cervid = st.slider('Number of Cervid Facilities', min_value=0, max_value=9, step=1, value=5)
+    Harvest = st.slider('Total Harvest', min_value=5, max_value=9950, step=10, value=2000)
     Hunting = st.selectbox('Hunting Enclosures', [0, 0.5, 1])
     Baiting = st.selectbox('Baiting', [0, 0.5, 1])
     Feeding = st.selectbox('Feeding', [0, 0.5, 1])
     Carcass = st.selectbox('Whole Carcass Import', [0, 0.5])
     Urine = st.selectbox('Urine Lures', [0.0, 0.5, 1.0])
     Captive = st.selectbox('Captive status', [0, 1])
-    Forest = st.slider('Forest (Average Proportion)', 0.007, 0.89, 0.4, 0.01)
-    Clay = st.slider('Clay (Average Percent)', 4, 31, 15, 0.5)  # Corrected step to float to match other float values
-    Streams = st.slider('Streams (Average distance to the nearest water)', 1125, 41430, 20000, 20)
+    Forest = st.slider('Forest (Average Proportion)', min_value=0.007, max_value=0.89, step=0.01, value=0.4)
+    Clay = st.slider('Clay (Average Percent)', min_value=4, max_value=31, step=1, value=15)  # Corrected step to float to match other float values
+    Streams = st.slider('Streams (Average distance to the nearest water)', min_value=1125, max_value=41430, step=20, value=2000)
   
     # Code for Prediction
     diagnosis = ''
