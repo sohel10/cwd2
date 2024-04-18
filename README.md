@@ -15,11 +15,7 @@ Before running this application, you need the following installed:
 - numpy
 - Pillow
 
-## Installation
-To set up the app on your local machine:
-1. Clone this repository to your local machine using `git clone`.
-2. Install the required Python libraries using `pip install -r requirements.txt` (make sure to create a requirements file with all the dependencies).
-3. Run the Streamlit app using `streamlit run app.py`.
+
 
 ## Usage
 The application has a simple interface where the user can input the following parameters:
